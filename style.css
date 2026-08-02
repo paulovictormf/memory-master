@@ -623,3 +623,19 @@ h1 span {
     flex-direction: column;
   }
 }
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px 0;
+    text-align: center;
+    color: #bdbdbd;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer strong {
+    color: #ffffff;
+}
