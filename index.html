@@ -8,6 +8,7 @@
   <title>Memory Master</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="ambient ambient-one"></div>
   <div class="ambient ambient-two"></div>
@@ -17,7 +18,9 @@
       <div>
         <p class="eyebrow">DESAFIO DE MEMÓRIA</p>
         <h1>Memory <span>Master</span></h1>
-        <p class="subtitle">Encontre os pares, faça combos e bata seu recorde.</p>
+        <p class="subtitle">
+          Encontre os pares, faça combos e bata seu recorde.
+        </p>
       </div>
 
       <div class="header-actions">
@@ -32,10 +35,12 @@
           <strong>Fácil</strong>
           <span>4 × 3</span>
         </button>
+
         <button class="difficulty-button" data-level="medium" type="button">
           <strong>Médio</strong>
           <span>4 × 4</span>
         </button>
+
         <button class="difficulty-button" data-level="hard" type="button">
           <strong>Difícil</strong>
           <span>6 × 4</span>
@@ -87,25 +92,34 @@
           <span id="pairsLabel">0 de 6 pares</span>
           <strong id="accuracyLabel">Precisão: 100%</strong>
         </div>
-        <div class="progress-track" aria-hidden="true">
+
+        <div class="progress-track">
           <span id="progressBar"></span>
         </div>
       </div>
 
-      <div id="board" class="board" aria-label="Tabuleiro do jogo da memória"></div>
+      <div id="board" class="board"></div>
     </section>
 
     <section class="panel tips">
       <span>💡</span>
       <p>Memorize a posição das cartas e tente concluir com o menor número de jogadas.</p>
     </section>
+
+    <footer class="footer">
+      <p>© 2026 • Desenvolvido por <strong>Paulo Victor Mateus Fonseca</strong></p>
+    </footer>
+
   </main>
 
   <div id="winModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="winTitle">
     <div class="modal-card">
       <div id="medal" class="medal">🏆</div>
+
       <p class="eyebrow">DESAFIO CONCLUÍDO</p>
+
       <h2 id="winTitle">Você venceu!</h2>
+
       <p id="winMessage">Excelente memória!</p>
 
       <div class="result-grid">
@@ -113,10 +127,12 @@
           <small>Tempo</small>
           <strong id="finalTime">00:00</strong>
         </div>
+
         <div>
           <small>Jogadas</small>
           <strong id="finalMoves">0</strong>
         </div>
+
         <div>
           <small>Precisão</small>
           <strong id="finalAccuracy">100%</strong>
@@ -124,19 +140,19 @@
       </div>
 
       <div class="modal-actions">
-        <button id="playAgainButton" class="primary-button" type="button">Jogar novamente</button>
-        <button id="closeModalButton" class="secondary-button" type="button">Ver tabuleiro</button>
+        <button id="playAgainButton" class="primary-button" type="button">
+          Jogar novamente
+        </button>
+
+        <button id="closeModalButton" class="secondary-button" type="button">
+          Ver tabuleiro
+        </button>
       </div>
     </div>
   </div>
 
-  <div id="particleLayer" class="particle-layer" aria-hidden="true"></div>
-    </main>
+  <div id="particleLayer" class="particle-layer"></div>
 
-<footer>
-    <p>© 2026 • Desenvolvido por <strong>Paulo Victor Mateus Fonseca</strong></p>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
-</html>
+</html>       
