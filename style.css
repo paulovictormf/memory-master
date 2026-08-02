@@ -622,7 +622,6 @@ h1 span {
   .modal-actions {
     flex-direction: column;
   }
-}
 footer {
     display: flex;
     justify-content: center;
